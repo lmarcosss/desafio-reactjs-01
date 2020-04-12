@@ -5,12 +5,33 @@
 }
 
 body {
-  font-size: 14px;
+  font-size: 14px sans-serif;
 }
 
-div {
+header {
   width: 100%;
-  margin: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.repository-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.repository-list {
+  padding: 40px
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.text {
+  font-family: sans-serif;
 }
 
 div li {
@@ -36,4 +57,52 @@ button {
 div li button {
   margin: 0 15px;
   background: #ca4949;
+}
+
+a {
+  color: inherit; 
+  text-decoration: inherit; 
+  cursor: pointer;
+  padding: 10px;
+  min-width: 95px;
+  font-weight: 500;
+  text-align: center;
+  margin-right: 20px;
+}
+
+a:hover {
+  color: white;
+  background: black;
+
+}
+
+label { 
+  font-family: sans-serif;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+input {
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 10px 0;
+}
+
+p {
+  font: 14px sans-serif;
+  text-align: center;
+}
+
+.container-techs { 
+  width: 100px;
 }
